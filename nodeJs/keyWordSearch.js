@@ -38,7 +38,7 @@ function check(fileName) {
     if (res && res.length) {
         // console.log(111111, res.length)
         // console.log(fileName, "\n"+res.join("\n"));
-        // 跨行打印
+        // 跨行打印输出  join拼接比循环更简洁
         console.log("\n" + res.join("\n"));
     }
 }
