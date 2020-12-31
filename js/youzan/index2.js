@@ -106,16 +106,7 @@ function getValue(obj, path) {
 
 
 function uniqueArray(array) {
-    let tmpArr = []
-    let result = []
-    array.forEach(item => {
-        if (tmpArr.indexOf(item) === -1) {
-            result.push(item)
-            tmpArr.push(item)
-        }
-    })
-    console.log(result)
-    return result
+    
 }
 
 
