@@ -9,7 +9,6 @@
 
       <v-icon>mdi-triangle</v-icon>
     </v-system-bar>
-
     <v-navigation-drawer
       v-model="drawer"
       app
