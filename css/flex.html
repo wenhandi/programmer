@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent-box{
+            width: 600px;
+            display: flex;
+        }
+        .one{
+            width: 200px;
+            background-color: #ccc;
+            /* flex-basis: 200px; */
+        }
+        /* 放大属性设置为1  可使其占据剩余空间 */
+        .other{
+            background-color: aquamarine;
+            /* 项目放大比例 默认0   不放大 */
+            flex-grow: 1;
+            /*  项目缩小比例    默认1   空间不足将缩小*/
+            /* flex-shrink: 1; */
+        }
+        .child-box{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <!-- 容器 -->
+    <div class="parent-box">
+        <!-- 项目 -->
+        <div class="one">固定大小</div>
+        <div class="other">剩余</div>
+    </div>
+</body>
+</html>

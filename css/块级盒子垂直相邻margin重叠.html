@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent-box{
+            width: 200px;
+            
+        }
+        .border{
+            
+        }
+        .top{
+            width: 200px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+        }
+        .bottom{
+            width: 200px;
+            background-color: #060;
+            margin-top: 20px;
+        }
+        /* 生成bfc元素 块级格式化上下文 */
+        .bfc{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        BFC Block Formatting Context 块级格式化上下文
+    </div>
+    <div class="parent-box">
+        <div class="bfc">
+            <div class="border top">top</div>
+        </div>
+        <div class="border bottom">bottom</div>
+    </div>
+</body>
+</html>

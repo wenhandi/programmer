@@ -62,3 +62,22 @@ function urlParse(url) {
 }
 
 urlParse(url)
+
+
+// 进制转换
+function toOne(num, i) {
+    let result = []
+    let cur 
+    do {
+        debugger
+        // 求余算出每一位的值
+        cur = num % i
+        // 为算次地位做准备
+        num = Math.floor(num / i)
+        result.push(cur)
+    } while (num !== 0)
+    result = result.reverse().join("")
+    console.log(result)
+    return result
+}
+toOne(15, 8)

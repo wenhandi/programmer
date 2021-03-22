@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>深度优先遍历</title>
+</head>
+
+<body>
+    <div id="root">
+        <ul>
+            <li>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+            </li>
+            <li>
+                <span></span>
+            </li>
+        </ul>
+        <p></p>
+        <button></button>
+    </div>
+</body>
+
+<script>
+    let root = document.getElementById("root")
+    deepFirstSearch(root, nodeList = [])
+
+    // 递归版本
+    function deepFirstSearch(node, nodeList){
+        if(node){
+            nodeList.push(node)
+            var children = node.children;
+            for(var i=0; i< children.length; i++){
+                deepFirstSearch(children[i], nodeList)
+            }
+        }
+    }
+</script>
+</html>

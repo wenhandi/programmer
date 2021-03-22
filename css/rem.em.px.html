@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>px. em, rem</title>
+    <style>
+        body{
+            font-size: 62.5%;
+        }
+        /* .box{
+            font-size: 10px;
+        }
+        .parent1{
+            font-size: 20px;
+            width: 4em;
+        } */
+        .parent{
+            font-size: 20px;
+            /* font-size: 4em; */
+        }
+        .child{
+            /* font-size: 14px; */
+            width: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        font-size  的值可以是  
+            绝对大小值 xx-large
+            相对大小值 larger
+            长度值  12px    0.8em   3rem
+            百分比  62.5%
+    </div>
+    <div class="box">
+        默认
+        <div class="parent">
+            父亲
+            <div class="child">
+                儿子
+            </div>
+        </div>
+        <!-- <div class="parent">
+            父亲
+            <div class="child">
+                儿子
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
